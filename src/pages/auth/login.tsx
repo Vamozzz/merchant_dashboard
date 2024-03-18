@@ -87,6 +87,8 @@ function LoginPage() {
     }
   );
 
+  const [isRegisterd, setRegistered] = useState(false);
+
   useEffect(() => {
     const fetchUserDevice = async () => {
       const deviceInfo = await getDeviceInfo();
@@ -214,7 +216,9 @@ function LoginPage() {
         );
         const data = await response.json();
         console.log(data, "response data");
+        
         if (data.status === true) {
+          setRegistered(true);
           setCredentialError({
             ...credentialError,
             registrationError: data.message,
@@ -287,7 +291,7 @@ function LoginPage() {
           className="object-cover w-full lg:w-1/2"
         />
         <div className="flex  items-center justify-center w-full lg:w-1/2 py-10 lg:py-0 bg-[#F1F2F5]">
-          <div className="w-2/3 p-6 m-auto bg-white rounded-lg">
+          <div className="w-full p-6 m-auto bg-white rounded-lg lg:w-2/3">
             <div className="flex items-center justify-center p-4">
               {headerIcons?.WebLogoHeaderIcon && (
                 <headerIcons.WebLogoHeaderIcon />
@@ -437,7 +441,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
-      {/* <OtpPopup /> */}
+      {isRegisterd && <OtpPopup />}
     </div>
   );
 }
