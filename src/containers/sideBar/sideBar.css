@@ -1,0 +1,7 @@
+.animateSideBar {
+  transition: all 2s ease;
+}
+
+.closeSideBar {
+  opacity: 0;
+}
