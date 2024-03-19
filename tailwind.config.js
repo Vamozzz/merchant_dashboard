@@ -43,6 +43,9 @@ module.exports = {
         "totalRefundBg-cardC":
           "url('/src/assets/images/backgroundImages/totalRefundBgCardC.svg')",
       },
+      fontFamily: {
+        'poppins': ['Poppins']
+      },
     },
   },
   plugins: [],

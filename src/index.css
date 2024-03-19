@@ -5,6 +5,13 @@
   font-weight: 100 900;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,3 +35,55 @@ code {
 @tailwind utilities;
 
 
+/* Define custom classes with @apply */
+.text-32-bold {
+  @apply text-5xl font-bold;
+}
+
+.text-24-bold {
+  @apply text-4xl font-bold;
+}
+
+.text-20-bold {
+  @apply text-3xl font-bold;
+}
+
+.text-18-semibold {
+  @apply text-2xl font-semibold;
+}
+
+.text-16-bold {
+  @apply text-xl font-bold;
+}
+
+.text-20-medium {
+  @apply text-3xl font-medium;
+}
+
+.text-16-medium {
+  @apply text-xl font-medium;
+}
+
+.text-14-medium {
+  @apply text-lg font-medium;
+}
+
+.text-14-semibold {
+  @apply text-lg font-semibold;
+}
+
+.text-12-bold {
+  @apply text-base font-bold;
+}
+
+.text-12-semibold {
+  @apply text-base font-semibold;
+}
+
+.text-12-medium {
+  @apply text-base font-medium;
+}
+
+.text-7-regular {
+  @apply text-xs font-normal;
+}

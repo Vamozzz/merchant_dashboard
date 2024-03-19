@@ -3,12 +3,14 @@ import React, { ChangeEvent, FC } from "react";
 interface inputType {
   label?: string;
   value: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   error?: string;
   htmlFor?: string;
   placeholder?: string;
   innerHtml?: string;
-  inputType?:string;
+  inputType?: string;
+  disabled?: boolean;
+  maxLength?:number;
 }
 
 const CustomInput: FC<inputType> = ({
@@ -20,6 +22,8 @@ const CustomInput: FC<inputType> = ({
   placeholder,
   innerHtml,
   inputType,
+  disabled,
+  maxLength,
 }) => {
   return (
     <div className="flex flex-col gap-2">
@@ -27,6 +31,8 @@ const CustomInput: FC<inputType> = ({
         {label}
       </label>
       <input
+      maxLength={maxLength}
+        disabled={disabled}
         value={value}
         type={inputType}
         name={htmlFor}

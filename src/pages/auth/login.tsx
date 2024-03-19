@@ -87,7 +87,7 @@ function LoginPage() {
     }
   );
 
-  const [isRegisterd, setRegistered] = useState(false);
+  const [isRegisterd, setRegistered] = useState(true);
 
   useEffect(() => {
     const fetchUserDevice = async () => {
@@ -153,7 +153,7 @@ function LoginPage() {
       !registrationData.mobile.trim() ||
       !contactRegex.test(registrationData.mobile)
     ) {
-      newErrors.mobile = "Enter valid contact";
+      newErrors.mobile = "Valid Contact is required";
       isValid = false;
     }
 
@@ -435,13 +435,14 @@ function LoginPage() {
                       Login Here
                     </button>
                   </div>
+                  {isRegisterd && <OtpPopup />}
                 </div>
               )}
             </form>
           </div>
         </div>
       </div>
-      {isRegisterd && <OtpPopup />}
+     
     </div>
   );
 }
