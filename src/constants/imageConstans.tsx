@@ -8,15 +8,14 @@ import { ReactComponent as AvatarCommonIcon } from "../assets/images/MERCHANT.sv
 
 import loginImage from "../assets/images/LOGIN&SIGNUP.svg";
 
-
 //navbar icons
 
 import { ReactComponent as HomeNavIcon } from "../assets/images/home.svg";
 import { ReactComponent as TransactionNavIcon } from "../assets/images/transaction.svg";
 import { ReactComponent as SettlementNavIcon } from "../assets/images/settlements.svg";
 import { ReactComponent as RefundNavIcon } from "../assets/images/refundMainColor.svg";
-import { ReactComponent as CreateinvoiceNavIcon } from "../assets/images/createinvoice.svg";
-import { ReactComponent as CreatelinkNavIcon } from "../assets/images/createlink.svg";
+import { ReactComponent as CreateinvoiceNavIcon } from "../assets/images/invoiceLink.svg";
+import { ReactComponent as CreatelinkNavIcon } from "../assets/images/paymentLink.svg";
 import { ReactComponent as SendmoneyNavIcon } from "../assets/images/sendmoneyMainColor.svg";
 import { ReactComponent as ApiNavIcon } from "../assets/images/api.svg";
 import { ReactComponent as SettingsNavIcon } from "../assets/images/settings.svg";
@@ -42,9 +41,9 @@ import { ReactComponent as SettlementBgCardA } from "../assets/images/background
 
 //  cardB icons
 
-import { ReactComponent as SendMoneyCardBIcon } from "../assets/images/sendmoney.svg";
-import { ReactComponent as DynamicPaymentCardBIcon } from "../assets/images/DYNAMIC1.svg";
-import { ReactComponent as StaticPaymentCardBIcon } from "../assets/images/staticpayment.svg";
+import SendMoneyCardBIcon from "../assets/images/sendmoney.svg";
+import invoiceLinkCardBIcon from "../assets/images/invoiceLink.svg";
+import paymentLinkCardBIcon from "../assets/images/paymentLink.svg";
 
 //cardD icons
 
@@ -106,9 +105,9 @@ export const CardAIcons = {
 // cardB icons export
 
 export const CardBIcons = {
+  invoiceLinkCardBIcon,
+  paymentLinkCardBIcon,
   SendMoneyCardBIcon,
-  DynamicPaymentCardBIcon,
-  StaticPaymentCardBIcon,
 };
 
 // cardD icons export

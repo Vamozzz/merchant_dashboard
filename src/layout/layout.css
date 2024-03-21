@@ -35,3 +35,15 @@
   height: 80vh;
   overflow: scroll;
 }
+
+@media screen and (max-width: 512px) {
+  .mainSection {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainSection {
+    grid-template-columns: auto;
+  }
+}

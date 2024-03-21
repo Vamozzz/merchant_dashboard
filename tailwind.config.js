@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
+      xs: "320px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -44,7 +45,7 @@ module.exports = {
           "url('/src/assets/images/backgroundImages/totalRefundBgCardC.svg')",
       },
       fontFamily: {
-        'poppins': ['Poppins']
+        poppins: ["Poppins"],
       },
     },
   },

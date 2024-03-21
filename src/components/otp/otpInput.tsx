@@ -5,6 +5,7 @@ import React, {
   KeyboardEvent,
   useEffect,
 } from "react";
+import "./otpInput.css";
 
 const OtpInput: React.FC<{ length?: number; onOtpSubmit?: () => void }> = ({
   length = 4,
@@ -69,7 +70,7 @@ const OtpInput: React.FC<{ length?: number; onOtpSubmit?: () => void }> = ({
             value={value}
             onChange={(e) => handleChange(index, e)}
             onKeyDown={(e) => handleKeyDown(index, e)}
-            className="bg-white w-[40px] h-[40px] m-2 rounded-lg text-center"
+            className="bg-[#EFF2F5] w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] m-2 rounded-lg text-center spinner"
           />
         );
       })}

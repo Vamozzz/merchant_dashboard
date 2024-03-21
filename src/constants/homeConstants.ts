@@ -1,6 +1,11 @@
 import { navItems } from "../types/homeTypes";
-import { navBarIcons,CardAIcons, CardBIcons, CommonIcons, CardDIcons } from "../constants/imageConstans";
-
+import {
+  navBarIcons,
+  CardAIcons,
+  CardBIcons,
+  CommonIcons,
+  CardDIcons,
+} from "../constants/imageConstans";
 
 // navbar constant export
 
@@ -10,7 +15,7 @@ export const navConstants: navItems[] = [
     navText: "Home",
     isLink: true,
     link: "",
-    navIcon:navBarIcons?.HomeNavIcon,
+    navIcon: navBarIcons?.HomeNavIcon,
   },
   {
     id: "2",
@@ -85,82 +90,77 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.SettingsNavIcon,
-  }
+  },
 ];
-
 
 // cardA constant export
 
 export const settlementBalanceCardA = {
-  type:"settlement",
+  type: "settlement",
   title: "Settlement Balance",
   amount: "₹80,650",
   Image1: undefined,
-  Image1Fill:"",
+  Image1Fill: "",
   desc: "",
   Image2: CardAIcons?.Settlements,
-  Image2Fill:"#3D3E40",
-  bgColor:"#FAEAE6",
-  strokeColor:"#F8D5CB",
-  bgImage:CardAIcons?.SettlementBgCardA,
+  Image2Fill: "#3D3E40",
+  bgColor: "#FAEAE6",
+  strokeColor: "#F8D5CB",
+  bgImage: CardAIcons?.SettlementBgCardA,
 };
 
 export const walletBalanceCardA = {
-  type:"wallet",
+  type: "wallet",
   title: "Wallet Balance",
   amount: "₹80,650",
   Image1: CardAIcons?.AddWallet,
   desc: "Add Balance",
   Image2: CardAIcons?.Wallet,
-  bgColor:"#F9E3EC",
-  strokeColor:"#FCD3E4",
-  bgImage:CardAIcons?.WalletBgCardA,
+  bgColor: "#F9E3EC",
+  strokeColor: "#FCD3E4",
+  bgImage: CardAIcons?.WalletBgCardA,
 };
 
 // cardB constant export
 
-export const sendMoneyCardB = {
+export const invoiceLinkCardB = {
+  id: "1",
+  title: "Invoice Link",
+  Image1: CardBIcons?.invoiceLinkCardBIcon,
+};
+
+export const paymentLinkCardB = {
   id: "2",
+  title: "Payment Link",
+  Image1: CardBIcons?.paymentLinkCardBIcon,
+};
+
+export const sendMoneyCardB = {
+  id: "3",
   title: "Send Money",
   Image1: CardBIcons?.SendMoneyCardBIcon,
-  Image2:CardBIcons?.SendMoneyCardBIcon
 };
-
-export const dynamicPaymentCardB = {
-  id: "2",
-  title: "Send Money",
-  Image1: CardBIcons?.DynamicPaymentCardBIcon,
-  Image2:CardBIcons?.SendMoneyCardBIcon
-};
-
-export const staticPaymentCardB = {
-  id: "2",
-  title: "Send Money",
-  Image1: CardBIcons?.StaticPaymentCardBIcon,
-  Image2:CardBIcons?.SendMoneyCardBIcon
-};
-
 
 //cardC constant export
 
 export const totalPayinCardC = {
   type: "totalpayin",
-    title: "Total Payin",
-    amount: "₹80,650",
-    average: "Avg monthly",
-    averageStats: "11.9%",
-    thisMonth: "This month",
-    thisMonthStats: "11.9%",
-    Image1: CommonIcons?.ArrowCommonIcon,
-    Image2: CommonIcons?.GreenUpArrowCommonIcon,
-    Image3: CommonIcons?.RedDownArrowCommonIcon,
-    cardStyle:{
-      backgroundColor:"#F1EAFF",
-      borderColor:"#D5CBEA",
-      // backgroundImage:,
-      backgroundPosition: 'center',
-    }
-}
+  title: "Total Payin",
+  amount: "₹80,650",
+  average: "Avg monthly",
+  averageStats: "11.9%",
+  thisMonth: "This month",
+  thisMonthStats: "11.9%",
+  Image1: CommonIcons?.ArrowCommonIcon,
+  Image2: CommonIcons?.GreenUpArrowCommonIcon,
+  Image3: CommonIcons?.RedDownArrowCommonIcon,
+  cardStyle: {
+    backgroundColor: "#FBFBFB",
+    borderColor: "#D5CBEA",
+    // backgroundImage:,
+    backgroundPosition: "center",
+  },
+};
 
 export const totalPayoutCardC = {
   type: "totalpayout",
@@ -173,13 +173,13 @@ export const totalPayoutCardC = {
   Image1: CommonIcons?.ArrowCommonIcon,
   Image2: CommonIcons?.GreenUpArrowCommonIcon,
   Image3: CommonIcons?.RedDownArrowCommonIcon,
-  cardStyle:{
-    backgroundColor:"#FFE9E9",
-    borderColor:"#F9D1D2",
+  cardStyle: {
+    backgroundColor: "#FBFBFB",
+    borderColor: "#F9D1D2",
     // backgroundImage:"",
-    backgroundPosition: 'center',
-  }
-}
+    backgroundPosition: "center",
+  },
+};
 
 export const totalSettlementCardC = {
   type: "totalssettlement",
@@ -192,13 +192,13 @@ export const totalSettlementCardC = {
   Image1: CommonIcons?.ArrowCommonIcon,
   Image2: CommonIcons?.GreenUpArrowCommonIcon,
   Image3: CommonIcons?.RedDownArrowCommonIcon,
-  cardStyle:{
-    backgroundColor:"#D7E7D7",
-    borderColor:"#B6D3B6",
+  cardStyle: {
+    backgroundColor: "#FBFBFB",
+    borderColor: "#B6D3B6",
     // backgroundImage:"",
-    backgroundPosition: 'center',
-  }
-}
+    backgroundPosition: "center",
+  },
+};
 
 export const totalRefundCardC = {
   type: "totalrefund",
@@ -211,13 +211,13 @@ export const totalRefundCardC = {
   Image1: CommonIcons?.ArrowCommonIcon,
   Image2: CommonIcons?.GreenUpArrowCommonIcon,
   Image3: CommonIcons?.RedDownArrowCommonIcon,
-  cardStyle:{
-    backgroundColor:"#B9D5E3",
-    borderColor:"#92BDD3",
+  cardStyle: {
+    backgroundColor: "#FBFBFB",
+    borderColor: "#92BDD3",
     // backgroundImage:"",
-    backgroundPosition: 'center',
-  }
-}
+    backgroundPosition: "center",
+  },
+};
 
 // cardD constant export
 
@@ -227,12 +227,12 @@ export const upiTransactionDataCardD = {
   transactionCount: "No Of Transactions",
   totalTransactionStats: "₹80,650",
   transactionCountStats: "₹80,650",
-  Image1:CardDIcons?.UpiCardDIcon,
-  Image2:CardDIcons?.UpiCardDIcon,
-  cardStyle:{
-    backgroundColor:"#F2F2F2",
-    borderColor:"#FCFCFCF",
-  }
+  Image1: CardDIcons?.UpiCardDIcon,
+  Image2: CardDIcons?.UpiCardDIcon,
+  cardStyle: {
+    backgroundColor: "#F2F2F2",
+    borderColor: "#FCFCFCF",
+  },
 };
 
 export const cardTransactionDataCardD = {
@@ -241,12 +241,12 @@ export const cardTransactionDataCardD = {
   transactionCount: "No Of Transactions",
   totalTransactionStats: "₹80,650",
   transactionCountStats: "₹80,650",
-  Image1:CardDIcons?.UpiCardDIcon,
-  Image2:CardDIcons?.UpiCardDIcon,
-   cardStyle:{
-    backgroundColor:"#F2F2F2",
-    borderColor:"#FCFCFCF",
-  }
+  Image1: CardDIcons?.UpiCardDIcon,
+  Image2: CardDIcons?.UpiCardDIcon,
+  cardStyle: {
+    backgroundColor: "#F2F2F2",
+    borderColor: "#FCFCFCF",
+  },
 };
 
 export const netBankingTransactionDataCardD = {
@@ -255,10 +255,10 @@ export const netBankingTransactionDataCardD = {
   transactionCount: "No Of Transactions",
   totalTransactionStats: "₹80,650",
   transactionCountStats: "₹80,650",
-  Image1:CardDIcons?.UpiCardDIcon,
-  Image2:CardDIcons?.UpiCardDIcon,
-   cardStyle:{
-    backgroundColor:"#F2F2F2",
-    borderColor:"#FCFCFCF",
-  }
+  Image1: CardDIcons?.UpiCardDIcon,
+  Image2: CardDIcons?.UpiCardDIcon,
+  cardStyle: {
+    backgroundColor: "#F2F2F2",
+    borderColor: "#FCFCFCF",
+  },
 };

@@ -18,9 +18,9 @@ function HomePage() {
     <div>
       <div className="homePageContainer">
         <div className="firstRow">
+          <CardBContainer />
           <CardAComponent {...settlementBalanceCardA} />
           <CardAComponent {...walletBalanceCardA} />
-          <CardBContainer />
         </div>
         <div className="secondRow">
           <CardCComponent {...totalPayinCardC} />

@@ -1,8 +1,9 @@
 .cardBContainer {
-  background-image: url("../../assets/images/settlementBg.svg");
+  /* background-image: url("../../assets/images/settlementBg.svg"); */
   background-repeat: repeat;
   object-fit: fill;
   border-radius: 25px;
-  /* background-color: #F5D8D0; */
-  background-color: #E2E2FF;
+  background-color: #fbfbfb;
+  /* background-color: #e2e2ff; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

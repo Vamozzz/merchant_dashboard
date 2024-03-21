@@ -4,14 +4,14 @@ import { CardInfoCardB } from "../../types/homeTypes";
 
 const CardBComponent: FC<CardInfoCardB> = ({ title, Image1, Image2 }) => {
   return (
-    <div className="cardB relative flex justify-center items-center p-2">
+    <div className="relative flex items-center justify-center p-2 cardB">
       <div className="flex flex-col w-full justify-center items-center font-semibold text-white text-[14px]">
-        {Image1 && <Image1 style={{ height: 50, width: 50 }} />}
-        <p>{title}</p>
+        <img src={Image1} alt="." height={30} width={30} />
+        <p className="text-center">{title}</p>
       </div>
-      <div className="absolute top-4 right-4 cardBContainerImageBorder rounded-full ">
+      {/* <div className="absolute rounded-full top-4 right-4 cardBContainerImageBorder ">
         {Image2 && <Image2 style={{ height: 30, width: 30 }} />}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -3,7 +3,9 @@ import { headerIcons, loginIcons } from "../../constants/imageConstans";
 import ButtonComponent from "../../components/button/buttonComponent";
 import CustomInput from "../../components/customInput/customInput";
 import { getDeviceInfo } from "../../helper/deviceInfo";
-import OtpPopup from "../../components/popup/otpPopup";
+import OtpPopup from "../../components/popup/mobileOtp";
+import EmailOtp from "../../components/popup/emailOtp";
+import LocationRequired from "../../components/popup/locationRequired";
 
 interface registrationState {
   first_name: string;
@@ -216,7 +218,7 @@ function LoginPage() {
         );
         const data = await response.json();
         console.log(data, "response data");
-        
+
         if (data.status === true) {
           setRegistered(true);
           setCredentialError({
@@ -283,14 +285,14 @@ function LoginPage() {
   };
 
   return (
-    <div className="relative">
+    <div className="">
       <div className="flex flex-col lg:flex-row">
         <img
           src={loginIcons?.loginImage}
           alt={"loginBackground"}
           className="object-cover w-full lg:w-1/2"
         />
-        <div className="flex  items-center justify-center w-full lg:w-1/2 py-10 lg:py-0 bg-[#F1F2F5]">
+        <div className=" relative flex items-center justify-center w-full lg:w-1/2 py-10 lg:py-0 bg-[#F1F2F5]">
           <div className="w-full p-6 m-auto bg-white rounded-lg lg:w-2/3">
             <div className="flex items-center justify-center p-4">
               {headerIcons?.WebLogoHeaderIcon && (
@@ -351,11 +353,14 @@ function LoginPage() {
                   </div>
                 </div>
               ) : (
-                <div>
+                <div className="">
                   <p className="text-[#EE4B2B] p-6">
                     {credentialError.registrationError}
                   </p>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 ">
+                    {/* {isRegisterd && <LocationRequired />} */}
+                    {/* {isRegisterd && <OtpPopup />} */}
+                    {/* {isRegisterd && <EmailOtp />} */}
                     <CustomInput
                       label={"First Name"}
                       htmlFor="first_name"
@@ -435,14 +440,12 @@ function LoginPage() {
                       Login Here
                     </button>
                   </div>
-                  {isRegisterd && <OtpPopup />}
                 </div>
               )}
             </form>
           </div>
         </div>
       </div>
-     
     </div>
   );
 }

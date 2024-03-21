@@ -10,54 +10,54 @@ export interface SvgComponent
 export interface navItems {
   id: string;
   navText: string;
-  isLink:boolean;
-  link?:string;
+  isLink: boolean;
+  link?: string;
   navIcon?: string | SvgComponent;
 }
 
 // cardA
 
 export interface CardInfoCardA {
-  type:string;
+  type: string;
   title: string;
   amount: string;
   Image1?: SvgComponent;
-  Image1Fill?:string;
+  Image1Fill?: string;
   desc?: string;
   Image2?: SvgComponent;
-  Image2Fill?:string;
-  bgColor:string;
-  strokeColor:string;
-  bgImage:SvgComponent;
+  Image2Fill?: string;
+  bgColor: string;
+  strokeColor: string;
+  bgImage: SvgComponent;
 }
 
 export interface CardInfoCardB {
   title: string;
-  Image1?: SvgComponent;
-  Image2?:SvgComponent;
+  Image1?: string;
+  Image2?: string;
 }
 
 export interface CardInfoCardC {
-  type:string;
+  type: string;
   title: string;
-  amount:string;
+  amount: string;
   average: string;
   averageStats: string;
   thisMonth: string;
   thisMonthStats: string;
   Image1: SvgComponent;
-  Image2:SvgComponent;
-  Image3:SvgComponent;
-  cardStyle?:CSSProperties;
+  Image2: SvgComponent;
+  Image3: SvgComponent;
+  cardStyle?: CSSProperties;
 }
 
 export interface CardInfoCardD {
-  Image1:SvgComponent;
-  Image2:SvgComponent;
-  title:string;
-  totalTransaction:string;
-  transactionCount:string;
-  totalTransactionStats:string;
-  transactionCountStats:string;
-  cardStyle:CSSProperties;
+  Image1: SvgComponent;
+  Image2: SvgComponent;
+  title: string;
+  totalTransaction: string;
+  transactionCount: string;
+  totalTransactionStats: string;
+  transactionCountStats: string;
+  cardStyle: CSSProperties;
 }

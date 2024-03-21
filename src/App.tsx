@@ -3,10 +3,10 @@ import LoginPage from "./pages/auth/login";
 
 function App() {
   return (
-      <div className="">
-        {/* <MainContent /> */}
-        <LoginPage />
-      </div>
+    <div className="">
+      <MainContent />
+      {/* <LoginPage /> */}
+    </div>
   );
 }
 
