@@ -32,20 +32,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .homePageContainer {
-    grid-template-rows: repeat(2, auto);
-  }
-  .firstRow {
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: repeat(2, auto);   */
-  }
-
-  .secondRow,
-  .thirdRow {
-    grid-template-columns: 1fr;
-  }
-}

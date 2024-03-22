@@ -18,20 +18,41 @@ function HomePage() {
     <div>
       <div className="homePageContainer">
         <div className="firstRow">
-          <CardBContainer />
-          <CardAComponent {...settlementBalanceCardA} />
-          <CardAComponent {...walletBalanceCardA} />
+          <div className="first_row_first_item">
+            <CardBContainer />
+          </div>
+          <div className="first_row_second_item">
+            <CardAComponent {...settlementBalanceCardA} />
+          </div>
+          <div className="first_row_third_item">
+            <CardAComponent {...walletBalanceCardA} />
+          </div>
         </div>
         <div className="secondRow">
-          <CardCComponent {...totalPayinCardC} />
-          <CardCComponent {...totalPayoutCardC} />
-          <CardCComponent {...totalSettlementCardC} />
-          <CardCComponent {...totalRefundCardC} />
+          <div className="second_row_first_item">
+            <CardCComponent {...totalPayinCardC} />
+          </div>
+
+          <div className="second_row_second_item">
+            <CardCComponent {...totalPayoutCardC} />
+          </div>
+          <div className="second_row_third_item">
+            <CardCComponent {...totalSettlementCardC} />
+          </div>
+          <div className="second_row_fourth_item">
+            <CardCComponent {...totalRefundCardC} />
+          </div>
         </div>
         <div className="thirdRow">
-          <CardDComponent {...upiTransactionDataCardD} />
-          <CardDComponent {...upiTransactionDataCardD} />
-          <CardDComponent {...upiTransactionDataCardD} />
+          <div className="third_row_first_item">
+            <CardDComponent {...upiTransactionDataCardD} />
+          </div>
+          <div className="third_row_second_item">
+            <CardDComponent {...upiTransactionDataCardD} />
+          </div>
+          <div className="third_row_third_item">
+            <CardDComponent {...upiTransactionDataCardD} />
+          </div>
         </div>
       </div>
     </div>
