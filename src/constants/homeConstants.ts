@@ -16,6 +16,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.HomeNavIcon,
+    navLink: "/",
   },
   {
     id: "2",
@@ -29,6 +30,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.TransactionNavIcon,
+    navLink: "transaction",
   },
   {
     id: "4",
@@ -36,6 +38,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.SettlementNavIcon,
+    navLink: "settlements",
   },
   {
     id: "5",
@@ -43,6 +46,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.RefundNavIcon,
+    navLink: "refund",
   },
   {
     id: "6",
@@ -56,6 +60,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.CreateinvoiceNavIcon,
+    navLink: "create-invoice",
   },
   {
     id: "8",
@@ -63,6 +68,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.CreatelinkNavIcon,
+    navLink: "create-link",
   },
   {
     id: "9",
@@ -70,6 +76,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.SendmoneyNavIcon,
+    navLink: "send-money",
   },
   {
     id: "10",
@@ -83,6 +90,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.ApiNavIcon,
+    navLink: "api",
   },
   {
     id: "12",
@@ -90,6 +98,7 @@ export const navConstants: navItems[] = [
     isLink: true,
     link: "",
     navIcon: navBarIcons?.SettingsNavIcon,
+    navLink: "settings",
   },
 ];
 

@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../../layout/layout";
-import HomePage from "../../pages/home/homePage";
+import Router from "../../routes/router";
+import Home from "../../pages/home/home";
 
 function MainContent() {
   return (
     <Layout>
       <div className="rounded-lg ">
-        <HomePage />
+        <Home />
       </div>
     </Layout>
   );

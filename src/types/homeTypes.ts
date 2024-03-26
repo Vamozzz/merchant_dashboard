@@ -13,6 +13,7 @@ export interface navItems {
   isLink: boolean;
   link?: string;
   navIcon?: string | SvgComponent;
+  navLink?: string;
 }
 
 // cardA

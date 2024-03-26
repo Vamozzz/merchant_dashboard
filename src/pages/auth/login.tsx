@@ -1,11 +1,11 @@
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { headerIcons, loginIcons } from "../../constants/imageConstans";
-import ButtonComponent from "../../components/button/buttonComponent";
-import CustomInput from "../../components/customInput/customInput";
+import ButtonComponent from "../../components/buttons/buttonComponent";
+import CustomInput from "../../components/customInputs/customInput";
 import { getDeviceInfo } from "../../helper/deviceInfo";
-import OtpPopup from "../../components/popup/mobileOtp";
-import EmailOtp from "../../components/popup/emailOtp";
-import LocationRequired from "../../components/popup/locationRequired";
+import OtpPopup from "../../components/popups/mobileOtp";
+import EmailOtp from "../../components/popups/emailOtp";
+import LocationRequired from "../../components/popups/locationRequired";
 
 interface registrationState {
   first_name: string;

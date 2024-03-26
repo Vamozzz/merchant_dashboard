@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./popup.css";
 import "../../index.css";
-import CustomInput from "../customInput/customInput";
+import CustomInput from "../customInputs/customInput";
 import OTPInput from "react-otp-input";
 import OtpInput from "../otp/otpInput";
-import ButtonComponent from "../button/buttonComponent";
+import ButtonComponent from "../buttons/buttonComponent";
 import location from "../../assets/images/locationimage.svg";
 
 const LocationRequired = () => {

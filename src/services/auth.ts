@@ -15,11 +15,3 @@
 //   .catch((error) => {
 //     console.error("Error:", error);
 //   });
-
-
-function Auth() {
-    const a =3;
-  return a;
-}
-
-export default Auth

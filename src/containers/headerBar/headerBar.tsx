@@ -13,7 +13,7 @@ const HeaderBar = () => {
   } = headerIcons;
   const { AvatarCommonIcon } = navBarIcons;
   return (
-    <header className="h-[8vh] lg:h-[10vh] px-4 w-full bg-[#FFFFFF] shadow-lg lg:shadow-none lg:rounded-lg lg:border-2 lg:border-greyBorder  flex justify-between items-center ">
+    <header className="h-[8vh] xl:h-[10vh] px-4 w-full bg-[#FFFFFF] shadow-lg lg:shadow-none lg:rounded-lg lg:border-2 lg:border-greyBorder  flex justify-between items-center ">
       <div className="flex justify-start flex-1 p-2">
         <BrowserView>
           <WebLogoHeaderIcon />

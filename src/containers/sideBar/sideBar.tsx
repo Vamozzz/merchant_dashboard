@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navConstants } from "../../constants/homeConstants";
 import { navBarIcons } from "../../constants/imageConstans";
 import "./sideBar.css";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const [isOpen, setOpen] = useState(true);
@@ -29,7 +30,8 @@ const SideBar = () => {
       >
         {/* gap-4  py-4 */}
         {navConstants.map((item) => (
-          <div
+          <Link
+            to={`${item.navLink}`}
             key={item.id}
             className={`w-full py-2 ${
               isOpen ? "rounded-3xl px-5" : "rounded-full w-[60%]  mx-auto"
@@ -45,19 +47,61 @@ const SideBar = () => {
                   <item.navIcon color="#6C54FF" />
                 </div>
               )}
-              <p
-                className={` ${
-                  item.isLink
-                    ? `text-[16px] font-medium  `
-                    : `text-[18px] font-semibold  `
-                } text-textColor-textBlack text-nowrap 
+              {/* {item?.isLink ? (
+                <Link
+                  to={`/${item?.navLink}`}
+                  className={` ${
+                    item.isLink
+                      ? `text-[16px] font-medium  `
+                      : `text-[18px] font-semibold  `
+                  } text-textColor-textBlack text-nowrap 
                 ${isOpen ? "block" : "hidden"}
               `}
-              >
-                {item?.navText}
-              </p>
+                >
+                  {item?.navText}
+                </Link>
+              ) : (
+                <p
+                  className={` ${
+                    item.isLink
+                      ? `text-[16px] font-medium  `
+                      : `text-[18px] font-semibold  `
+                  } text-textColor-textBlack text-nowrap 
+                ${isOpen ? "block" : "hidden"}
+              `}
+                >
+                  {item?.navText}
+                </p>
+              )} */}
+
+              {item.isLink ? (
+                <Link
+                  to={`${item.navLink}`}
+                  className={`${
+                    item.isLink
+                      ? `text-[16px] font-medium`
+                      : `text-[18px] font-semibold`
+                  } text-textColor-textBlack text-nowrap ${
+                    isOpen ? "block" : "hidden"
+                  }`}
+                >
+                  {item.navText}
+                </Link>
+              ) : (
+                <p
+                  className={`${
+                    item.isLink
+                      ? `text-[16px] font-medium`
+                      : `text-[18px] font-semibold`
+                  } text-textColor-textBlack text-nowrap ${
+                    isOpen ? "block" : "hidden"
+                  }`}
+                >
+                  {item.navText}
+                </p>
+              )}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <button

@@ -2,9 +2,10 @@ import React, { FC, ReactNode } from "react";
 import HeaderBar from "../containers/headerBar/headerBar";
 import SideBar from "../containers/sideBar/sideBar";
 import "./layout.css";
+import { Outlet } from "react-router";
 
 interface layoutProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const Layout: FC<layoutProps> = ({ children }) => {
@@ -14,10 +15,13 @@ const Layout: FC<layoutProps> = ({ children }) => {
         <HeaderBar />
       </div>
       <div className="mainSection ">
-        <div className=" sideBarSection  hidden lg:block ">
+        <div className="hidden sideBarSection xl:block">
           <SideBar />
         </div>
-        <div className="contentSection">{children}</div>
+        <div className="contentSection">
+          <Outlet />
+          {/* {children} */}
+        </div>
       </div>
     </div>
   );

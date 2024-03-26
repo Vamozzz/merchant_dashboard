@@ -1,0 +1,6 @@
+/* @media screen and (max-width: 512px) {
+  .mainSection {
+    grid-template-columns: auto;
+    justify-content: flex-start;
+  }
+} */

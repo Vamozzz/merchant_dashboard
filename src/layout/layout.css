@@ -39,10 +39,11 @@
 @media screen and (max-width: 512px) {
   .mainSection {
     grid-template-columns: auto;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .mainSection {
     grid-template-columns: auto;
   }

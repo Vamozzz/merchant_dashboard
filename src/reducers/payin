@@ -1,0 +1,15 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = [];
+
+export const payinSlice = createSlice({
+  name: "payin",
+  initialState,
+  reducers: {
+    getPayin(action, reducers) {},
+  },
+});
+
+export const { getPayin } = payinSlice.actions;
+
+export default payinSlice.reducer;

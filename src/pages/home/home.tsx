@@ -13,7 +13,7 @@ import CardBContainer from "../../containers/cardContainer/cardBContainer";
 import "./homePage.css";
 import CardCComponent from "../../components/cards/cardC";
 import CardDComponent from "../../components/cards/cardD";
-function HomePage() {
+function Home() {
   return (
     <div>
       <div className="homePageContainer">
@@ -59,4 +59,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

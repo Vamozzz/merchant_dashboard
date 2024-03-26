@@ -20,5 +20,6 @@
   },
   "editor.fontLigatures": true,
   "editor.fontFamily": "fira-code-nerd, FiraCode Nerd Font, Consolas, 'Courier New', monospace",
-  "peacock.color": "#42b883"
+  "peacock.color": "#42b883",
+  "material-icon-theme.activeIconPack": "react_redux"
 }
